@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useTheme } from "styled-components";
 import { FC, MouseEventHandler } from "react";
 import { Icon, IconButton, Toggle } from "@/components";
@@ -8,6 +9,7 @@ import {
   Wrapper,
   NavBtn,
   Today,
+  // eslint-disable-next-line no-unused-vars
   Zoom,
   Filters,
   OptionsContainer
@@ -69,7 +71,7 @@ const Topbar: FC<TopbarProps> = ({ width, showThemeToggle, toggleTheme }) => {
       </NavigationWrapper>
       <OptionsContainer>
         {showThemeToggle && <Toggle toggleTheme={toggleTheme} />}
-        <Zoom>
+        {/* <Zoom>
           {topbar.view}
           <IconButton
             isDisabled={!isPrevZoom}
@@ -85,7 +87,7 @@ const Topbar: FC<TopbarProps> = ({ width, showThemeToggle, toggleTheme }) => {
             iconName="add"
             width="14"
           />
-        </Zoom>
+        </Zoom> */}
       </OptionsContainer>
     </Wrapper>
   );
