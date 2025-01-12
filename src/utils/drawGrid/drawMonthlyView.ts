@@ -11,7 +11,7 @@ export const drawMonthlyView = (
   cols: number,
   startDate: Day,
   theme: Theme,
-  config: any
+  config: { [key: string]: string | number | boolean }
 ) => {
   console.log("config", config);
   for (let i = 0; i < rows; i++) {

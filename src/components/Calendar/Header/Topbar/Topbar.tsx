@@ -69,7 +69,7 @@ const Topbar: FC<TopbarProps> = ({ width, showThemeToggle, toggleTheme }) => {
       </NavigationWrapper>
       <OptionsContainer>
         {showThemeToggle && <Toggle toggleTheme={toggleTheme} />}
-        {/* <Zoom>
+        <Zoom>
           {topbar.view}
           <IconButton
             isDisabled={!isPrevZoom}
@@ -85,7 +85,7 @@ const Topbar: FC<TopbarProps> = ({ width, showThemeToggle, toggleTheme }) => {
             iconName="add"
             width="14"
           />
-        </Zoom> */}
+        </Zoom>
       </OptionsContainer>
     </Wrapper>
   );
