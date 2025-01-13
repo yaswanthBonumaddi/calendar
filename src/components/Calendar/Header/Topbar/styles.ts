@@ -49,7 +49,7 @@ export const Today = styled.button`
   font-weight: 600;
   cursor: pointer;
   line-height: 1.5rem;
-  color: ${({ theme }) => theme.colors.textPrimary};
+  color: ${({ theme }) => theme.colors.accent};
 
   &::before,
   &::after {

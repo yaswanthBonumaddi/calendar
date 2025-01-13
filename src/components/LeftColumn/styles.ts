@@ -43,7 +43,7 @@ export const StyledInputWrapper = styled.div<StyledInputWrapperProps>`
   margin-left: 10px;
   height: 36px;
   width: calc(100% - 20px); //20px = 10px margin each side
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
   border: 1px solid
     ${({ theme, isFocused }) => (isFocused ? theme.colors.accent : theme.colors.border)};
   border-radius: 4px;

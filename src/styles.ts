@@ -53,7 +53,7 @@ export const theme: DefaultTheme = {
     gridBackground: "#EAE7DC",
 
     primary: "#F8F8FD",
-    secondary: "#E6F3FF",
+    secondary: "#D3D0C6",
     tertiary: "#C9E5FF",
 
     textPrimary: "#1C222F",
@@ -61,7 +61,7 @@ export const theme: DefaultTheme = {
     placeholder: "#777777",
 
     button: "#FFFFFF",
-    border: "#D2D2D2",
+    border: "#a6a6a6",
     tooltip: "#3B3C5F",
     hover: "#E6F3FF",
     disabled: "#777777",
@@ -69,7 +69,7 @@ export const theme: DefaultTheme = {
 
     defaultTile: "#728DE2",
 
-    accent: "#0A11EB"
+    accent: "#E85A50"
   }
 };
 

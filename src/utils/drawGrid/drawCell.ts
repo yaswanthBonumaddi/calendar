@@ -12,11 +12,11 @@ export const drawCell = (
 ) => {
   ctx.strokeStyle = theme.colors.border;
   if (isCurrentDay) {
-    ctx.fillStyle = theme.colors.secondary;
+    ctx.fillStyle =  "#cbc8ba" //theme.colors.secondary;
   } else if (isBusinessDay) {
     ctx.fillStyle = "transparent";
   } else {
-    ctx.fillStyle = "#345543";
+    ctx.fillStyle = "#d3d0c6";
   }
   ctx.beginPath();
   ctx.setLineDash([]);
