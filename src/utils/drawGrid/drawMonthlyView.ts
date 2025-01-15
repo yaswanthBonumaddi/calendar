@@ -11,9 +11,9 @@ export const drawMonthlyView = (
   cols: number,
   startDate: Day,
   theme: Theme,
+  // eslint-disable-next-line no-unused-vars
   config: { [key: string]: string | number | boolean }
 ) => {
-  console.log("config", config);
   for (let i = 0; i < rows; i++) {
     for (let y = 0; y <= cols; y++) {
       const date = dayjs(`${startDate.year}-${startDate.month + 1}-${startDate.dayOfMonth}`).add(
