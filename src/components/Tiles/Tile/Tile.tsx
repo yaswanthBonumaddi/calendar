@@ -5,9 +5,9 @@ import { getDatesRange } from "@/utils/getDatesRange";
 import { getTileProperties } from "@/utils/getTileProperties";
 import { getTileTextColor } from "@/utils/getTileTextColor";
 import {
-  StyledDescription,
+  // StyledDescription,
   StyledStickyWrapper,
-  StyledText,
+  // StyledText,
   StyledTextWrapper,
   StyledTileWrapper
 } from "./styles";
@@ -24,24 +24,29 @@ const Tile: FC<TileProps> = ({ row, data, zoom, onTileClick }) => {
     data.endDate,
     zoom
   );
-
   const { colors } = useTheme();
+  const isApproved = data.status === "approved";
 
   return (
     <StyledTileWrapper
       style={{
         left: `${x}px`,
         top: `${y}px`,
-        backgroundColor: `${data.bgColor ?? colors.defaultTile}`,
-        width: `${width}px`,
-        color: getTileTextColor(data.bgColor ?? "")
+        width: `${width - 6}px`,
+        marginLeft: "3px",
+        borderRadius: "30px",
+        backgroundColor: isApproved ? `${data.bgColor ?? colors.defaultTile}` : "#EAE7DC",
+        border: `3px solid ${data.bgColor ?? colors.defaultTile}`,
+        color: isApproved
+          ? getTileTextColor(data.bgColor ?? "")
+          : getTileTextColor(data.bgColor ?? "")
       }}
       onClick={() => onTileClick?.(data)}>
       <StyledTextWrapper>
         <StyledStickyWrapper>
-          <StyledText bold>{data.title}</StyledText>
+          {/* <StyledText bold>{data.title}</StyledText>
           <StyledText>{data.subtitle}</StyledText>
-          <StyledDescription>{data.description}</StyledDescription>
+          <StyledDescription>{data.description}</StyledDescription> */}
         </StyledStickyWrapper>
       </StyledTextWrapper>
     </StyledTileWrapper>
