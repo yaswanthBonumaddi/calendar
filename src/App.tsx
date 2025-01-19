@@ -57,37 +57,37 @@ function App() {
         subtitle: "failing"
       },
       data: [
-        {
-          id: "c27ad670-e14f-45d4-8ba5-26d293f23a43",
-          startDate: new Date("2025-01-18T03:16:39.545Z"),
-          endDate: new Date("2025-01-20T21:18:40.057Z"),
-          occupancy: 23800,
-          title: "decipher Northwest",
-          subtitle: "weber",
-          description: "Pickup Riel copying Folding Borders",
-          bgColor: "rgb(34,29,193)",
-          status: "approved"
-        },
-        {
-          id: "c27ad670-e14f-45d4-8ba5-26d293f23a34",
-          startDate: new Date("2025-01-18T03:16:39.545Z"),
-          endDate: new Date("2025-01-20T21:18:40.057Z"),
-          occupancy: 23800,
-          title: "decipher Northwest",
-          subtitle: "weber",
-          description: "Pickup Riel copying Folding Borders",
-          bgColor: "rgb(20,45,100)",
-          status: "pending"
-        },
+        // {
+        //   id: "c27ad670-e14f-45d4-8ba5-26d293f23a43",
+        //   startDate: new Date("2025-01-18T03:16:39.545Z"),
+        //   endDate: new Date("2025-01-20T21:18:40.057Z"),
+        //   occupancy: 23800,
+        //   title: "decipher Northwest",
+        //   subtitle: "weber",
+        //   description: "Pickup Riel copying Folding Borders",
+        //   bgColor: "#3ac2ba",
+        //   status: "approved"
+        // },
+        // {
+        //   id: "c27ad670-e14f-45d4-8ba5-26d293f23a34",
+        //   startDate: new Date("2025-01-18T03:16:39.545Z"),
+        //   endDate: new Date("2025-01-20T21:18:40.057Z"),
+        //   occupancy: 23800,
+        //   title: "decipher Northwest",
+        //   subtitle: "weber",
+        //   description: "Pickup Riel copying Folding Borders",
+        //   bgColor: "#5ab",
+        //   status: "approved"
+        // },
         {
           id: "c27ad670-e14f-45d4-8ba5-26d293f23b34",
           startDate: new Date("2025-01-18"),
-          endDate: new Date("2025-01-19"),
+          endDate: new Date("2025-01-25"),
           occupancy: 23800,
           title: "decipher Northwest",
           subtitle: "weber",
           description: "Pickup Riel copying Folding Borders",
-          bgColor: "rgb(20,45,100)",
+          bgColor: "#5ab",
           status: "pending"
         }
       ]
