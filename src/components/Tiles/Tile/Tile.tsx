@@ -36,7 +36,7 @@ const Tile: FC<TileProps> = ({ row, data, zoom, onTileClick }) => {
         marginLeft: "3px",
         borderRadius: "30px",
         backgroundColor: isApproved ? `${data.bgColor ?? colors.defaultTile}` : "#EAE7DC",
-        border: `1px solid ${data.bgColor ?? colors.defaultTile}`,
+        border: `2px solid ${data.bgColor ?? colors.defaultTile}`,
         color: isApproved
           ? getTileTextColor(data.bgColor ?? "")
           : getTileTextColor(data.bgColor ?? "")
