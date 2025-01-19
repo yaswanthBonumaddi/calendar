@@ -25,7 +25,7 @@ const Tile: FC<TileProps> = ({ row, data, zoom, onTileClick }) => {
     zoom
   );
   const { colors } = useTheme();
-  const isApproved = data.status === "approved";
+  const isApproved = data.status === "APPROVED";
 
   return (
     <StyledTileWrapper
